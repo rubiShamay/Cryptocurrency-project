@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Currency</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="icon" type="image/icon" href="assats/imges/icon.png" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+  <script src="jquery-3.7.0.js"></script>
+  <script defer src="main.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="">
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Crypto V.01</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <div class="coin copper"></div>
+          <div class="coin flip silver"></div>
+          <div class="coin"></div>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" id="currencies" href="javascript:void(0)">Currencies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" id="liveReports" href="javascript:void(0)">Live Reports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="about" href="javascript:void(0)">About</a>
+          </li>
+        </ul>
+        <div>
+          <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- scroll -->
+  <div class="top-top-advertising">
+    <div class="top-advertising">
+      <div class="advertising">
+        Our site offers to choose five currencies from the list, and then switch to live reports to see changes every
+        two seconds - glad you are with us.. 😁</div>
+    </div>
+  </div>
+  <!-- container cards -->
+  <h1 id="titleMain"></h1>
+  <div class="container-fluid" id="mainContainer">
+
+
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Limit Of Coins</h1>
+          <button type="button" id="modalClose" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="inModal" class="modal-body cardModal">
+            <div class="card">
+              <div class="card-body cardModal">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="modal" id="loadingModal" tabindex="-1" aria-labelledby="loadingModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end page -->
+</body>
+
+</html>

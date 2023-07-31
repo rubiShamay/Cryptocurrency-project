@@ -1,0 +1,293 @@
+body {
+    background-image: url("assats/imges/bitcoin-cash-coins-computer-wallpaper-preview.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.coinNotFound{
+    color: gold;
+    font-size: 70px;
+}
+
+.spinner-border {
+    --bs-spinner-width: 1rem;
+    --bs-spinner-height: 1rem;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.cardModal {
+    display: flex !important;
+    flex-direction: row !important;
+    ;
+    background-color: white !important;
+    ;
+    color: black !important;
+    ;
+}
+.titleDivAbout{
+    text-shadow: -6px 10px 7px white;
+}
+.navbar-toggler {
+    background-color: white;
+}
+#titleMain{
+    text-shadow: -18px 13px 5px black
+}
+
+.aboutMyDiv {
+    background-color: black;
+    color: white;
+    width: 80%;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 23px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--bs-modal-color);
+    pointer-events: auto;
+    background-color: var(--bs-modal-bg);
+    background-clip: padding-box;
+    border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+    border-radius: var(--bs-modal-border-radius);
+    outline: 0;
+    flex-wrap: wrap;
+}
+
+#mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    /* opacity: 50%; */
+}
+
+.card-title {
+    margin-top: 1%;
+    margin-left: 4%;
+    margin-right: 40%;
+}
+
+.card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card-head {
+    height: 43px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px 25px 0px;
+    background-color: black;
+    color: white;
+}
+
+.card {
+    width: 12rem;
+    /* margin: 15px; */
+    margin-top: 2%;
+    margin-bottom: auto;
+}
+
+.selected {
+    color: red;
+    display: flex;
+    flex-direction: row;
+}
+
+.selectedCard {
+    width: 10rem;
+    margin: 10px;
+}
+
+.modal-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.selected>h5 {
+    margin-left: 0;
+}
+
+.selectedTitle {
+    margin-right: 10%;
+}
+
+.card-text {
+    margin-left: 4%;
+}
+
+.btn .btn-primary {
+    width: 50%;
+}
+
+#titleMain {
+    text-align: center;
+    color: white;
+}
+
+.card-img-top {
+    height: 50px;
+    float: right;
+    border-radius: 10px;
+    width: 50px;
+    margin-right: 7%;
+    margin-top: 4%;
+}
+
+.collapse-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4px;
+    background-color: white;
+    color: black;
+}
+
+#div {
+    height: 1000px;
+    width: 100%;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: black !important;
+    color: white;
+}
+
+.nav-link:hover,
+.nav-link .active:hover {
+    color: black !important;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.nav-link,
+.nav-link .active {
+    color: white !important;
+}
+
+.meImage {
+    width: 65px;
+    height: 100px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.advertising{
+    float: left;
+    padding: 0px 10px;
+    color: black;
+}
+.top-advertising{
+    width: auto;
+    position: absolute;
+    overflow: hidden;
+    animation: marquee 50s linear infinite;
+    white-space: nowrap;
+}
+.top-top-advertising{
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+}
+@keyframes marquee {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-40%);
+    }
+}
+/* toggle button */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #f3f3f3;
+    --btn-bg-inactive: #ffffff;
+    --btn-bg-active: black;
+    --border: #DCDCDC;
+    --border-w: 1px;
+    --btn-thumb: #EDF2F4;
+    --btn-w: 2.5rem;
+    /* change btn size, and everything else scales according to it. except border size */
+    --btn-h: calc(var(--btn-w) / 2);
+    /* increase btn height by descreasing the number */
+    --gap: calc(var(--btn-h) / 10);
+    /* increase gap by decreasing the number */
+}
+
+
+.btn-toggle {
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+input {
+    display: none;
+}
+
+.toggle {
+    box-sizing: content-box;
+    width: var(--btn-w);
+    height: var(--btn-h);
+    padding: var(--gap);
+    border: var(--border-w) solid var(--border);
+    border-radius: var(--btn-w);
+    background: var(--btn-bg-inactive);
+    cursor: pointer;
+    position: relative;
+    transition: background 0.3s;
+}
+
+.toggle::before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: var(--gap);
+    width: var(--btn-h);
+    height: var(--btn-h);
+    border: var(--border-w) solid var(--border);
+    border-radius: 50%;
+    background: var(--btn-thumb);
+    transition: transform 0.3s;
+}
+
+[id^="check"]:checked+.toggle::before {
+    transform: translateX(calc(var(--btn-w) - var(--btn-h)));
+}
+
+[id^="check"]:checked+.toggle {
+    background: var(--btn-bg-active);
+}
