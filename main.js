@@ -34,7 +34,7 @@
       return json;
     } catch (err) {
       console.error(error);
-      mainContainer.innerHTML = `<h1>${titleError}</h1>`;
+      mainContainer.innerHTML = `<h1 class="titleError">${titleError}</h1>`;
     }
   }
   async function getFromSessionStorageOrHttps() {

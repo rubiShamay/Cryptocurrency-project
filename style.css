@@ -33,6 +33,12 @@ body {
     color: black !important;
     ;
 }
+.titleError{
+    margin-top: 4%;
+    font-weight: bold;
+    font-size: 56px;
+    color: white;
+}
 .titleDivAbout{
     text-shadow: -6px 10px 7px black;
     font-weight: bold;
