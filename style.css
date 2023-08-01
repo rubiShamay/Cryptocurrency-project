@@ -335,3 +335,31 @@ input {
     padding: 19px;
     margin-top: 2%;
 }
+@media screen and (max-width: 768px) {
+    .aboutMyDiv {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .meImage {
+      width: 150px;
+      height: 150px;
+    }
+
+    .aboutMyCenter,
+    .aboutMyLeftSide {
+      padding: 10px;
+    }
+
+    .icons {
+      justify-content: space-evenly;
+    }
+  }
+
+  /* Mobile styles */
+  @media screen and (max-width: 480px) {
+    .meImage {
+      width: 100px;
+      height: 100px;
+    }
+  }
