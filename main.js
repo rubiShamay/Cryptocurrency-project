@@ -141,8 +141,8 @@
         htmlCard += `
           <div class="card">
               <div class="card-body cardModal">
-                ${selectedCards[i]}
-                <span class="btn-toggle">
+                <span class="nameSelectCard">${selectedCards[i]}</span>
+                <span class="btn-toggle selected-toggle">
                 <input class="toggle-one ee" data-bs-dismiss="modal" type="checkbox" name="modalCheck" value="${selectedCards[i]}" id="checkModal${i}">
                 <label class="toggle" for="checkModal${i}"></label>
               </span>

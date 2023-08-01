@@ -23,15 +23,19 @@ body {
 .navbar-brand {
     color: white !important;
 }
-
+.nameSelectCard{
+    margin-left: 10px;
+}
 .cardModal {
     display: flex !important;
     flex-direction: row !important;
-    ;
     background-color: white !important;
-    ;
     color: black !important;
-    ;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.selected-toggle{
+    margin-right: 10px;
 }
 .titleError{
     margin-top: 4%;
