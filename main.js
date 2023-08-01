@@ -12,7 +12,6 @@
   const selectedCards = [];
   const selectedCardsModal = document.getElementById("staticBackdrop");
   const myModal = new bootstrap.Modal(selectedCardsModal);
-  // const moreInfoCoin = [];
   const loadingModal = document.getElementById("loadingModal");
   const modalLoad = new bootstrap.Modal(loadingModal);
   const checkboxes = document.getElementsByClassName("toggle-one");
@@ -54,14 +53,12 @@
       }
     }
   }
-
   // ---------------------------------------------------
   // |------ display item be the search input  ---------
   // ---------------------------------------------------
-  search.addEventListener("keyup", async () => {
+  search.addEventListener('input', async () => {
     const arr = await getFromSessionStorageOrHttps();
     const data = search.value.toLowerCase();
-
     if (!data || data.length === 0) {
       display(arr);
     } else {
@@ -206,7 +203,7 @@
   });
 
   // ---------------------------------------------------
-  // ---- check session more info or do fetch ----------
+  // -- check session more info or do fetch(more info) -
   // ---------------------------------------------------
   async function getMoreInfoFromSessionOrHttps(element) {
     try {
@@ -287,33 +284,60 @@
     titleMain.innerHTML = `<h1>About Me</h1>`
     mainContainer.innerHTML = `
     <div class="aboutMyDiv">
-    <h4 class="titleDivAbout">Hi, everyone ! <br> And Welcome To My Site</h4>
-    <div>
-      <img class="meImage" src="assats/imges/rubi.png">
-      <div>
-        <p class="titleDivAbout"><strong> little about me .. </strong></p>
-        <p>my name is rubi shamay <br></p>
-        <p>
-          I am studying John Bryce, fullstack studies, and this is my first project in java script
-          I work in Harel Insurance as an analyst</p>
+    <h4 class="titleDivAbout titles">Hi, everyone ! And Welcome To My Site</h4>
+    <div class="aboutMyCenter">
+      <div class="aboutMyRigthSide">
+        <div>
+          <img class="meImage" src="assats/imges/toonmecom_056cfd.jpeg">
+        </div>
+        <div class="icons">
+          <a href="https://www.facebook.com/tuioyiyukuholkl"><img src="assats/imges/icons8-facebook-50.png" alt=""></a>
+          <a href="https://github.com/rubiShamay"><img src="assats/imges/icons8-git-50.png" alt=""></a>
+          <a href="https://www.linkedin.com/in/%D7%A8%D7%95%D7%91%D7%99-%D7%A9%D7%9E%D7%90%D7%99-a3487a258/"><img src="assats/imges/icons8-linkedin-50.png" alt=""></a>
+        </div>
+        <div>
+          <p class="titleDivAbout"><strong>My Knowledge (as of date 2023-08-01) </strong></p>
+          <div class="myKnowledge">
+            <img class="img" src="assats/imges/icons8-html-50.png" alt="">
+            <img class="img" src="assats/imges/icons8-css-50.png" alt="">
+            <img class="img" src="assats/imges/icons8-javascript-50.png" alt="">
+            <img class="img" src="assats/imges/icons8-power-bi-50.png" alt="">
+            <img class="img" src="assats/imges/icons8-sql-80.png" alt="">
+            <img class="img" src="assats/imges/icons8-microsoft-office-50.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="aboutMyLeftSide">
+        <div>
+          <p class="titleDivAbout"><strong>Little About Me .. </strong></p>
+          <p>My Name is Rubi Shamay <br></p>
+          <p>
+            I am studying John Bryce, fullstack studies, and this is my first project in java script
+            I work in Harel Insurance as an analyst</p>
+        </div>
+        <div>
+          <h6 class="titleDivAbout"> About The Project ..<br></h6>
+          <p>I really hope you enjoyed my coins site..</p>
+          <p>The project provides users with information about digital currencies (cryptocurrencies). Users can search
+            for
+            specific currencies, view their details, and access additional information, such as current prices in
+            different
+            currencies. The interface displays the data in a user-friendly manner and allows users to select and save
+            their
+            preferred currencies for easy access. The application employs a spinner modal to indicate loading while
+            fetching
+            data from the server, ensuring a smooth user experience.
+          </p>
+        </div>
+
       </div>
     </div>
-    <h6 class="titleDivAbout"> about the project ..<br></h6>
-    <p>I really hope you enjoyed my coins site..</p>
-    <p>The project provides users with information about digital currencies (cryptocurrencies). Users can search for
-      specific currencies, view their details, and access additional information, such as current prices in different
-      currencies. The interface displays the data in a user-friendly manner and allows users to select and save their
-      preferred currencies for easy access. The application employs a spinner modal to indicate loading while fetching
-      data from the server, ensuring a smooth user experience.
-    </p>
   </div>`
   }
   // ---------------------------------------------------
   // ----------- load currencies in first load ---------
   // ---------------------------------------------------
   window.addEventListener("load", () => { getFromSessionStorageOrHttps(), titleMain.innerHTML = "Crypto Currencies" })
-
-
   // ---------------------------------------------------
   // --------------- Chart Function --------------------
   // ---------------------------------------------------
@@ -383,6 +407,7 @@
   // ---------------------------------------------------
   liveReports.addEventListener("click", async () => {
     mainContainer.innerHTML = `<div id="chartContainer" style="height: 300px; width: 100%;"></div>`;
+    titleMain.innerHTML = `Live Reports`
     const arr = []
     for (const item of selectedCards) {
       console.log(arr.push(item.toUpperCase()))
