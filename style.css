@@ -11,6 +11,9 @@ body {
     color: white;
     font-size: 115px;
 }
+:root{
+    --bs-border-width: 0px;
+}
 
 .spinner-border {
     --bs-spinner-width: 1rem;
@@ -104,9 +107,8 @@ body {
 .card-title {
     margin-top: 1%;
     margin-left: 4%;
-    margin-right: 40%;
+    margin-right: 35%;
 }
-
 .card-head {
     display: flex;
     align-items: center;
