@@ -5,13 +5,18 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Cherry Bomb One', cursive;
+    /* font-family: 'Cherry Bomb One', cursive; */
+    /* font-family: 'Cherry Bomb One', cursive; */
+    font-family: Comic Sans MS, Textile;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
-.coinNotFound{
+
+.coinNotFound {
     color: white;
     font-size: 115px;
 }
-:root{
+
+:root {
     --bs-border-width: 0px;
 }
 
@@ -23,9 +28,11 @@ body {
 .navbar-brand {
     color: white !important;
 }
-.nameSelectCard{
+
+.nameSelectCard {
     margin-left: 10px;
 }
+
 .cardModal {
     display: flex !important;
     flex-direction: row !important;
@@ -34,52 +41,64 @@ body {
     border: 1px solid black;
     border-radius: 10px;
 }
-.selected-toggle{
+
+.selected-toggle {
     margin-right: 10px;
 }
-.titleError{
+
+.titleError {
     margin-top: 4%;
     font-weight: bold;
     font-size: 56px;
     color: white;
 }
-.titleDivAbout{
+
+.titleDivAbout {
     text-shadow: -6px 10px 7px black;
     font-weight: bold;
 }
+
 .navbar-toggler {
     background-color: white;
 }
-#titleMain{
+
+#titleMain {
     text-shadow: -18px 13px 5px black
 }
-.titles{
+
+.titles {
     margin-top: 2%;
 }
-.myKnowledge > img {
+
+.myKnowledge>img {
     height: 50px;
     width: 50px;
     border-radius: 8px;
 }
-.icons > a > img {
+
+.icons>a>img {
     background-color: white;
     border-radius: 10px;
     height: 60px;
     width: 60px;
     margin: 5%;
 }
-.img{
+
+.img {
     background-color: white;
 }
-.icons{
+
+.icons {
     margin-top: 10%;
 }
+
 .aboutMyDiv {
     background-color: black;
     color: white;
     width: 80%;
     text-align: center;
 }
+
 .modal-header {
     display: flex;
     flex-shrink: 0;
@@ -91,6 +110,7 @@ body {
     border-top-right-radius: var(--bs-modal-inner-border-radius);
     flex-direction: column;
 }
+
 .modal-content {
     position: relative;
     display: flex;
@@ -119,6 +139,7 @@ body {
     margin-left: 4%;
     margin-right: 35%;
 }
+
 .card-head {
     display: flex;
     align-items: center;
@@ -240,32 +261,38 @@ body {
     border: 1px solid;
     border-radius: 163px;
 }
-.advertising{
+
+.advertising {
     float: left;
     padding: 0px 10px;
     color: black;
 }
-.top-advertising{
+
+.top-advertising {
     width: auto;
     position: absolute;
     overflow: hidden;
     animation: marquee 50s linear infinite;
     white-space: nowrap;
 }
-.top-top-advertising{
+
+.top-top-advertising {
     height: 20px;
     overflow: hidden;
     position: relative;
     background-color: white;
 }
+
 @keyframes marquee {
-    0%{
+    0% {
         transform: translateX(100%);
     }
-    100%{
+
+    100% {
         transform: translateX(-40%);
     }
 }
+
 /* toggle button */
 *,
 *::before,
@@ -333,46 +360,50 @@ input {
 [id^="check"]:checked+.toggle {
     background: var(--btn-bg-active);
 }
-.aboutMyCenter{
+
+.aboutMyCenter {
     display: flex;
 }
-.aboutMyCenter > div {
+
+.aboutMyCenter>div {
     width: 50%;
     margin-right: 0%;
     padding: 4%;
 }
-.aboutMyLeftSide > div{
+
+.aboutMyLeftSide>div {
     background-color: white;
     color: black;
     border-radius: 10px;
     padding: 19px;
     margin-top: 2%;
 }
+
 @media screen and (max-width: 768px) {
     .aboutMyDiv {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     .meImage {
-      width: 150px;
-      height: 150px;
+        width: 150px;
+        height: 150px;
     }
 
     .aboutMyCenter,
     .aboutMyLeftSide {
-      padding: 10px;
+        padding: 10px;
     }
 
     .icons {
-      justify-content: space-evenly;
+        justify-content: space-evenly;
     }
-  }
+}
 
-  /* Mobile styles */
-  @media screen and (max-width: 480px) {
+/* Mobile styles */
+@media screen and (max-width: 480px) {
     .meImage {
-      width: 100px;
-      height: 100px;
+        width: 100px;
+        height: 100px;
     }
-  }
+}
