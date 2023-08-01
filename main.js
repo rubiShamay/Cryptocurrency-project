@@ -1,5 +1,7 @@
 "use strict";
 (() => {
+  // only for me
+  // const gitUrl = "https://github.com/rubiShamay/Cryptocurrency-project.git"
   // ---------------------------------------------------
   // |------------------- variables --------------------
   // ---------------------------------------------------
