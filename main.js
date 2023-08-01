@@ -28,9 +28,14 @@
     sessionStorage.setItem("myArrOfCoin", str);
   }
   async function getJson(url) {
-    const response = await fetch(url);
-    const json = await response.json();
-    return json;
+    try {
+      const response = await fetch(url);
+      const json = await response.json();
+      return json;
+    } catch (err) {
+      console.error(error);
+      mainContainer.innerHTML = `<h1>${titleError}</h1>`;
+    }
   }
   async function getFromSessionStorageOrHttps() {
     const getData = sessionStorage.getItem("myArrOfCoin");
